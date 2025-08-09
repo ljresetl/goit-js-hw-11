@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Генератор промісів з iziToast</title>
+
+    <!-- Власний CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <p><a href="./index.html">Go back</a></p>
+    <form class="form">
+      <label class="label-form">
+        Delay (ms)
+        <input class="input-form" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="radio-group">
+        <label class="custom-radio">
+          <input type="radio" name="state" value="fulfilled" required />
+          <span class="radio-mark"></span>
+          Fulfilled
+        </label>
+
+        <label class="custom-radio">
+          <input type="radio" name="state" value="rejected" required />
+          <span class="radio-mark"></span>
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="button-form" type="submit">Create notification</button>
+    </form>
+
+    <!-- Підключаємо лише свій JS (у ньому імпортуємо iziToast) -->
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>

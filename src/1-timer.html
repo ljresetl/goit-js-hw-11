@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таймер зворотного відліку</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Власний CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="timer-section">
+      <p><a href="./index.html">Go back</a></p>
+      <h1 class="timer-h">Таймер зворотного відліку</h1>
+      <div class="div-one">
+        <input
+          type="text"
+          id="datetime-picker"
+          class="datetime-picker-input"
+          placeholder="Оберіть дату та час"
+        />
+        <button class="button-timer" type="button" data-start>Старт</button>
+      </div>
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">DAYS</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">HOURS</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">MINUTES</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">SECONDS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Підключаємо лише свій JS (у ньому імпортуємо flatpickr та iziToast) -->
+    <script type="module" src="./js/1-timer.js"></script>
+  </body>
+</html>
