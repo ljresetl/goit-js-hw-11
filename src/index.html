@@ -2,26 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="data:,">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Власний CSS -->
+    <title>goit-js-hw-11</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
-    <section>
-      <ul class="ul-index">
-        <li><a href="./1-timer.html">Timer</a></li>
-        <li><a href="./2-snackbar.html">Snackbar</a></li>
-      </ul>
-    </section>
+    <main>
+      <section>
+        <div class="container">
+          <form class="form">
+            <label>
+              <input type="text" name="search-text" placeholder="Search images..." required>
+            </label>
+            <button class="button" type="submit">Search</button>
+            <select name="per-page" id="per-page">
+              <option value="33">33</option>
+              <option value="6">6</option>
+              <option value="9">9</option>
+              <option value="12">12</option>
+            </select>
+          </form>
+          <span class="loader hidden"></span>
+          <ul class="gallery"></ul>
+      </section>
+    </main>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
