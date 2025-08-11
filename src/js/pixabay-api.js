@@ -16,7 +16,7 @@ export default function getImagesByQuery(query, perPage = 3) {
   const params = new URLSearchParams({
   // Створюємо об'єкт URLSearchParams для формування параметрів запиту у форматі "key=value&..."
 
-    key: '50818720-8fed735658e97652981a6ffe2',
+    key: '51734453-5d46674fc0c6d7944706aca6e',
     // Унікальний ключ доступу до API Pixabay.
 
     q: query,
